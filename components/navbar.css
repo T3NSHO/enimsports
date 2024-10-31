@@ -1,0 +1,10 @@
+.navbarContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.Logo{
+    margin-right: 50%;
+}
