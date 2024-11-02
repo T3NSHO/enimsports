@@ -29,5 +29,13 @@
     "tailwindcss": "^3.4.1",
     "eslint": "^8",
     "eslint-config-next": "15.0.2"
-  }
+  },
+  "description": "Welcome to the ENIM Sports project! This application is designed to manage tournaments and reservations for the local field at the École Nationale de l'Industrie Minérale (ENIM).",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
