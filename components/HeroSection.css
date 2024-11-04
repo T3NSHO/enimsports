@@ -22,7 +22,7 @@ body {
   background-attachment: fixed; /* Keeps the background fixed on scroll */
   background-position: center;
   display: flex;
-  min-height: 100vh;
+  
 }
 
 .landing {
