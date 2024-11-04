@@ -23,7 +23,7 @@ function mainLanding() {
                   width="16"
                   height="16"
                   fill="currentColor"
-                  class="bi bi-trophy"
+                  className="bi bi-trophy"
                   viewBox="0 0 16 16"
                 >
                   {Svg.SvgTrophyPath}
@@ -37,7 +37,7 @@ function mainLanding() {
                   width="16"
                   height="16"
                   fill="currentColor"
-                  class="bi bi-trophy"
+                  className="bi bi-trophy"
                   viewBox="0 0 16 16"
                 >
                   {Svg.SvgTrophyPath}
@@ -66,7 +66,7 @@ function mainLanding() {
                 width="16"
                 height="16"
                 fill="currentColor"
-                class="bi bi-trophy"
+                className="bi bi-trophy"
                 viewBox="0 0 16 16"
               >
                 {Svg.SvgTrophyPath}
