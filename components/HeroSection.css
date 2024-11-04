@@ -1,0 +1,175 @@
+html,
+body {
+  background-color: rgb(23, 35, 61);
+  color: white; /* Optional: for text color */
+  margin: 0;
+  padding: 0;
+}
+
+.Container1 {
+  z-index: 2;
+  position: absolute;
+  margin-left: 100px;
+
+  font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  display: flex;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.Container {
+  background-color: rgb(23, 35, 61); /* Replace with your image path */
+  background-size: cover; /* Ensures the image covers the entire viewport */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Keeps the background fixed on scroll */
+  background-position: center;
+  display: flex;
+  min-height: 100vh;
+}
+
+.landing {
+  grid-template-columns: 40% 60%;
+
+  color: #fff; /* Sets text color for readability */
+  display: grid; /* Centers content vertically and horizontally */
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.container2 {
+  margin-top: 4cm;
+  margin-left: 10px;
+  height: 100%;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  gap: 5px;
+}
+
+.PhonePic {
+  padding-left: 7cm;
+  position: relative;
+  width: 1000px;
+  height: 600px;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+.playerPic {
+  border-bottom-right-radius: 70%;
+
+  left: 0px;
+  top: 0px;
+  background-position: center center;
+  padding: 0px;
+  z-index: 1;
+  position: relative;
+  transform: translateX(-100px);
+  max-width: 50%;
+  max-height: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1000px) {
+  .PhonePic {
+    display: none;
+  }
+  .landing {
+    color: #fff; /* Sets text color for readability */
+    margin-left: 200px;
+    position: relative;
+    display: flex; /* Centers content vertically and horizontally */
+  }
+  .container1 {
+    margin-left: 800px;
+    position: relative;
+  }
+  .bigContainer {
+    margin-left: auto;
+    margin-left: 0px;
+  }
+  .container2 {
+    margin-top: 50px;
+  }
+  @media (max-width: 900px) {
+    .playerPic {
+      display: none;
+    }
+    .landing {
+      color: #fff;
+      margin-left: 10px;
+      position: relative;
+      display: flex; /* Centers content vertically and horizontally */
+    }
+    .container2 {
+      margin-top: 50px;
+    }
+  }
+}
+.landing h2 {
+  font-size: 40px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.landing p {
+  font-size: 1.2em;
+  font-family: "Roboto Mono", monospace;
+}
+.blueColor {
+  color: #0173ff;
+}
+.landing button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #0173ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.landing button:hover {
+  transform: 0.5s;
+  background-color: #015e986c;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.checkmark {
+  color: #00fff7;
+  font-size: 1.2rem;
+  margin-right: 8px;
+}
+.btns {
+  font-family: "Roboto Mono", monospace;
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn {
+  font-family: "Roboto Mono", monospace;
+  font-size: 4px;
+  align-content: center;
+  display: flex;
+  gap: 10px;
+
+  height: 35px;
+}
+.roboto-mono-xx {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
