@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 import { error } from "console";
 
 export const POST = async (req: Request) => {
-
+    
     await db_connect();
     const { full_name ,email, password , phone , school } = await req.json();
     try {UserModel.create({full_name: full_name, email: email, password: password, phone_number: phone, school: school});
