@@ -1,12 +1,10 @@
-import Navbar from "@/components/Navbar";
-
-import HeroSection from "@/components/HeroSection";
+import MainPage from "@/app/components/MainPage/page";
 import "./home.css";
+
 export default function Home() {
   return (
     <div className="background">
-      <Navbar />
-      <HeroSection />
+      <MainPage />
     </div>
   );
 }
