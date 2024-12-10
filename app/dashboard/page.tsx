@@ -1,9 +1,13 @@
-import React from 'react'
-
-const page = () => {
+import React from "react";
+import AdminDashboard from "./components/admin/AdminDashboard"; // Import your component
+import StudentDashboard from "./components/student/StudentDashboard";
+import OrganizerDashboard from "./components/organizer/page";
+const Page = () => {
   return (
-    <div>page</div>
-  )
-}
+    <div>
+      <OrganizerDashboard />
+    </div>
+  );
+};
 
-export default page
+export default Page;

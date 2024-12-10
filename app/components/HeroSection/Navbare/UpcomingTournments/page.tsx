@@ -126,7 +126,7 @@ export default function TournamentTable() {
         >
           <img
             className="w-full h-48 md:h-64 object-cover"
-            src="/api/placeholder/800/400"
+            src="/foot.jpg"
             alt={`${tournaments[tournamentId].name} cover`}
           />
           <div className="p-4 md:p-8">
@@ -187,14 +187,13 @@ export default function TournamentTable() {
         {/* Tournament Table/Cards */}
         <div className="bg-gray-800 rounded-lg overflow-hidden">
           {/* Table Headers - Hidden on Mobile */}
-          <div className="hidden md:grid md:grid-cols-7 p-4 font-semibold text-gray-400 border-b border-gray-700">
+          <div className="hidden md:grid md:grid-cols-6 p-4 font-semibold text-gray-400 border-b border-gray-700">
             <div>Name</div>
             <div>Game</div>
             <div>Type</div>
             <div>Prize Pool</div>
             <div>Event Date</div>
             <div>Inspect</div>
-            <div>Join</div>
           </div>
 
           {/* Mobile and Desktop Views */}
@@ -222,14 +221,11 @@ export default function TournamentTable() {
                   >
                     Inspect
                   </button>
-                  <button className="bg-gray-700 px-4 py-1 rounded-lg hover:bg-blue-600 active:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300 flex-1">
-                    Join
-                  </button>
                 </div>
               </div>
 
               {/* Desktop View - Grid Layout */}
-              <div className="hidden md:grid md:grid-cols-7 p-4">
+              <div className="hidden md:grid md:grid-cols-6 p-4">
                 <div>{tournament.name}</div>
                 <div>{tournament.game}</div>
                 <div>{tournament.type}</div>
@@ -241,11 +237,6 @@ export default function TournamentTable() {
                     className="bg-gray-700 px-4 rounded-lg hover:bg-blue-600 active:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300"
                   >
                     Inspect
-                  </button>
-                </div>
-                <div>
-                  <button className="bg-gray-700 px-7 rounded-lg hover:bg-blue-600 active:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300">
-                    Join
                   </button>
                 </div>
               </div>

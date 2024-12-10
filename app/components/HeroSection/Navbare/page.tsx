@@ -9,7 +9,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/app/components/ui/navigation-menu";
-
+import Image from "next/image";
 const classNames = (...classes) => {
   return classes.filter(Boolean).join(" ");
 };
@@ -27,8 +27,10 @@ export default function Navbar() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <img
+            <Image
               src="/logo.png"
+              width={800}
+              height={500}
               alt="ENSMR Sports Logo"
               className="h-10 w-auto sm:h-12"
             />
@@ -85,10 +87,10 @@ export default function Navbar() {
                         View and register for upcoming sports competitions.
                       </ListItem>
                       <ListItem
-                        href="/tournaments/results"
-                        title="Tournament Results"
+                        href="/components/HeroSection/Navbare/OngoingTournments"
+                        title="ongoing Matches Results"
                       >
-                        Check past tournament results and standings.
+                        view details of the ongoing Matches.
                       </ListItem>
                       <ListItem
                         href="/tournaments/register"
